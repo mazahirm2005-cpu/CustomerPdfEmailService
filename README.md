@@ -13,8 +13,20 @@ The application:
 3. Validates the customer's CNIC format.
 4. Validates that the email follows a Gmail address format.
 5. Generates a customer profile PDF.
-6. Sends the PDF to the customer's email as an attachment.
+6. Sends the generated PDF to the customer's email as an attachment.
 7. Returns a success or error response through the REST API.
+
+## Features
+
+- Customer lookup using CNIC
+- CNIC format validation
+- Gmail address validation
+- Customer profile PDF generation
+- PDF email attachment
+- MySQL database integration
+- REST API endpoint
+- Service-layer architecture
+- Error handling for invalid or missing customer data
 
 ## Technologies Used
 
@@ -31,6 +43,15 @@ The application:
 - IntelliJ IDEA
 - Postman
 - Git & GitHub
+
+## Architecture
+
+The application follows a layered Spring Boot architecture:
+
+- **Controller** — Handles HTTP requests and API responses.
+- **Service** — Contains customer, PDF generation, and email business logic.
+- **Repository** — Communicates with the MySQL database using Spring Data JPA.
+- **Entity** — Represents customer data stored in the database.
 
 ## Project Structure
 
